@@ -26,7 +26,7 @@ let lightColor = (element, number) => {
   number = number * 500
   setTimeout(() => {
     element.classList.add('selected')
-  }, number - 250)
+  }, number - 100)
   setTimeout(() => {
     element.classList.remove('selected')
   })
@@ -41,7 +41,7 @@ let checkOrder = () => {
       break
     }
   }
-  if (clickedOrder.lenght == order.length) {
+  if (clickedOrder.length == order.length) {
     alert(`Pontuação: ${score}\nVocê acertou" Iniciando próximo nível!"`)
     nextLevel()
   }
